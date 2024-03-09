@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+   <center><h1>Calc</h1></center>
+    <center>
+        <section>
+    <div >
+        <input type="text" placeholder="0" id="result">
+    </div>
+        </section>
+    &nbsp;
+    <div id="second">
+    <table id="tab">
+        &nbsp; &nbsp;
+        <tr>
+          <td> <input type="button" value="7" onclick="display('7')" > </td>
+          <td> <input type="button" value="8" onclick="display('8')" > </td>
+          <td> <input type="button" value="9" onclick="display('9')" > </td>
+          <td> <input type="button" value="DEL" onclick="backspaceBtn()" style="background: #647299;"/> </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="4" onclick="display('4')" > </td>
+          <td> <input type="button" value="5" onclick="display('5')" > </td>
+          <td> <input type="button" value="6" onclick="display('6')" > </td>
+          <td> <input type="button" value="+" onclick="display('+')" > </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="1" onclick="display('1')" > </td>
+          <td> <input type="button" value="2" onclick="display('2')" > </td>
+          <td> <input type="button" value="3" onclick="display('3')" > </td>
+          <td> <input type="button" value="-" onclick="display('-')" > </td>
+        </tr>
+        <tr>
+          <td> <input type="button" value="." onclick="display('.')" > </td>
+          <td> <input type="button" value="0" onclick="display('0')" > </td>
+          <td> <input type="button" value="/" onclick="display('/')" > </td>
+          <td> <input type="button" value="x" onclick="display('*')" > </td>
+        </tr>
+        </table>
+        <table id="three">
+            <tr>
+                <th colspan="2"><input type="button" value="RESET" onclick="clearScreen()" style="background: #647299;width: 222.44px; height: 60px;
+                border-radius: 11.52px;"></th>
+                <th colspan="2"><input type="button" value="=" onclick="calculate()" style="background: #D13F30;width: 222.44px;height: 60px;left: 243.56px;
+                border-radius: 11.52px;"></th>
+            </tr>
+        </table>
+      </div>
+    </center>
+    <script type="text/javascript" src="logic.js"></script>
+</body>
+</html>
